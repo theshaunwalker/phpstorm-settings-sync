@@ -1,0 +1,35 @@
+<application>
+  <component name="com.intellij.ide.ui.customization.CustomActionsSchema">
+    <group value="MainToolBarSettings" is_group="true" action_type="-1" position="9">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="NewFile" is_action="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Project View Popup Menu" />
+      <path value="New" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="PhpNewFile" is_action="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Project View Popup Menu" />
+      <path value="New" />
+      <path value="PhpNewGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="PhpNewFile" is_action="true" action_type="1" position="1">
+      <path value="root" />
+      <path value="Project View Popup Menu" />
+      <path value="New" />
+      <path value="PhpNewGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="NewFile" is_action="true" action_type="1" position="2">
+      <path value="root" />
+      <path value="Project View Popup Menu" />
+      <path value="New" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+  </component>
+</application>

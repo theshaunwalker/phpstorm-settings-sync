@@ -1,0 +1,173 @@
+<templateSet group="PHP">
+  <template name="eco" value="echo '$END$';" description="'echo' statement" toReformat="true" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="t" value="$this-&gt;$CALL$" description="generate this" toReformat="false" toShortenFQNames="true">
+    <variable name="CALL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="for" value="for ($i = $Start$; $i &lt; $Max$; $i++$Increments$) {&#10;    $SELECTION$$END$&#10;}" description="'for' statement with defaults" toReformat="false" toShortenFQNames="true">
+    <variable name="Start" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="Max" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Increments" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="sc" value="Schema::table('$TABLE$', function($t) {&#10;    $t-&gt;create();&#10;    $t-&gt;increments('id');&#10;    $END$&#10;});" description="Schema Create" toReformat="true" toShortenFQNames="true">
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sd" value="Schema::drop('$TABLE$');" description="Schema Drop" toReformat="false" toShortenFQNames="true">
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="st" value="Schema::table('$TABLE$', function($t) {&#10;    $END$&#10;});" description="Schema Table" toReformat="true" toShortenFQNames="true">
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fun" value="$Scope$ function $Name$($PARAMETERS$): $Return$&#10;{&#10;    $END$&#10;}" description="function" toReformat="false" toShortenFQNames="true">
+    <variable name="Scope" expression="" defaultValue="&quot;public&quot;" alwaysStopAt="true" />
+    <variable name="Name" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Return" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="thr" value="throw new $Exception$(&quot;$Message$&quot;);&#10;$END$" description="throw new" toReformat="true" toShortenFQNames="true">
+    <variable name="Exception" expression="" defaultValue="&quot;\Exception&quot;" alwaysStopAt="true" />
+    <variable name="Message" expression="" defaultValue="&quot;Exception thrown&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="con" value="public function __construct(&#10;    $END$&#10;) {&#10;}" description="constructor" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="class" value="class $Class$ $Extends$&#10;{&#10;    $END$&#10;}" description="class" toReformat="false" toShortenFQNames="true">
+    <variable name="Class" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="Extends" expression="" defaultValue="&quot;extends &quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="try" value="try {&#10;    $SELECTION$&#10;} catch ($Exception$ $e) {&#10;    $END$&#10;}" description="Exception try catch" toReformat="false" toShortenFQNames="true">
+    <variable name="Exception" expression="" defaultValue="&quot;\\Exception&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if ($Condition$) {&#10;    $END$&#10;}" description="if statement" toReformat="false" toShortenFQNames="true">
+    <variable name="Condition" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="if ($Condition$) {&#10;    $End$&#10;} else {&#10;&#10;}" description="if else statement" toReformat="false" toShortenFQNames="true">
+    <variable name="Condition" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="End" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pd" value="/**&#10; * $Description$&#10; * $END$&#10; */" description="blank phpdoc block" toReformat="false" toShortenFQNames="true">
+    <variable name="Description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fn" value="function ($PARAMETERS$) $EXTRA${&#10;    $END$&#10;}" description="callback function" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXTRA" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="cqrsproj" value="public function project$EventName$(DomainEvent $domainEvent)&#10;{&#10;    /** @var $EventName$ $event */&#10;    $event = $domainEvent-&gt;getPayload();&#10;    &#10;    $End$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="EventName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="End" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="dv" value="/**&#10; * @var $Var$&#10; * @ORM\Column(name=&quot;$Name$&quot;, type=&quot;$Type$&quot;$OtherAttributes$)&#10; */&#10;private $$$Variable$" description="Doctrine Variable" toReformat="false" toShortenFQNames="true">
+    <variable name="Var" expression="" defaultValue="&quot;string&quot;" alwaysStopAt="true" />
+    <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Type" expression="" defaultValue="&quot;string&quot;" alwaysStopAt="true" />
+    <variable name="OtherAttributes" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Variable" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="proj" value="public function project$EventName$(DomainEvent $domainEvent)&#10;{&#10;    /** @var $EventName$ $event */&#10;    $event = $domainEvent-&gt;getPayload();&#10;    &#10;    $END$&#10;}" description="DomainEvent projector" toReformat="false" toShortenFQNames="true">
+    <variable name="EventName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="esfun" value="public function $Function$($Parameters$)&#10;{&#10;    $this-&gt;apply(&#10;        new $EventName$($EventArgs$)&#10;    );&#10;}&#10;&#10;public function apply$EventName$($EventName$ $event)&#10;{&#10;    $END$&#10;}" description="Function for an Event Sourced aggregate" toReformat="false" toShortenFQNames="true">
+    <variable name="Function" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Parameters" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EventName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EventArgs" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="vdt" value="var_dump(__FILE__ . &quot; : &quot; . __FUNCTION__ . &quot; : &quot; . __LINE__);die;" description="Standard var_dump with file info" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="vd" value="var_dump($DUMP$);die;$END$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="DUMP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pdi" value="/**&#10; * {@inheritdoc}&#10; */" description="PHPDoc inheritdoc" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="arrmap" value="array_map(&#10;    function ($value) $USE${$END$},&#10;    $ARRAY$&#10;);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="USE" expression="" defaultValue="&quot;use () &quot;" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="" defaultValue="&quot;$array&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="arrwalk" value="array_walk(function (&amp;$key, $value) $USE${$END});" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="USE" expression="" defaultValue="&quot;use () &quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ps" value="/** @psalm-suppress $TYPE$ */$END$" description="Inline @psalm-suppress" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pss" value="/**&#10; * @psalm-suppress $TYPE$&#10; */$END$" description="Docblock @psalm-supress" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="mdsuppress" value="@SuppressWarnings(PHPMD)" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+</templateSet>

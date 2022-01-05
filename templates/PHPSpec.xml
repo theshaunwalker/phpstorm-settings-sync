@@ -1,0 +1,143 @@
+<templateSet group="PHPSpec">
+  <template name="it" value="function it_$NAME$($DOUBES$)&#10;{&#10;    $END$&#10;}" description="'it_*' example" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DOUBES" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sre" value="$this-&gt;$FUNCTION$($ARGUMENTS$)-&gt;shouldReturn($END$);" description="shouldReturn example" toReformat="true" toShortenFQNames="true">
+    <variable name="FUNCTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGUMENTS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="let" value="function let($DOUBLES$)&#10;{&#10;    $this-&gt;beConstructedWith($END$);&#10;}" description="'let' function" toReformat="false" toShortenFQNames="true">
+    <variable name="DOUBLES" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ste" value="$this-&gt;shouldThrow($EXCEPTION$)-&gt;during$FUNCTION$($END$);" description="shouldThrow example" toReformat="false" toShortenFQNames="true">
+    <variable name="EXCEPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUNCTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="letgo" value="function letgo()&#10;{&#10;    $END$&#10;}" description="'letgo' function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sbce" value="$this-&gt;$FUNCTION$($END$)-&gt;shouldBeCalled();" description="shouldBeCalled example" toReformat="true" toShortenFQNames="true">
+    <variable name="FUNCTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbce" value="$this-&gt;$FUNCTION$($END$)-&gt;shouldNotBeCalled();" description="shouldNotBeCalled example" toReformat="true" toShortenFQNames="true">
+    <variable name="FUNCTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sr" value="shouldReturn($END$);" description="shouldReturn statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sbc" value="shouldBeCalled();" description="shouldBeCalled statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbc" value="shouldNotBeCalled();" description="shouldNotBeCalled statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sbi" value="shouldBeAnInstanceOf($CLASSORINTERFACE$);" description="shouldBeAnInstanceOf statement" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSORINTERFACE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbi" value="shouldBeAnInstanceOf($CLASSORINTERFACE$);" description="shouldNotBeAnInstanceOf statement" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSORINTERFACE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snr" value="shouldNotReturn($END$);" description="shouldNotReturn statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sb" value="shouldBe($END$);" description="shouldBe statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snb" value="shouldNotBe($END$);" description="shouldNotBe statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sbet" value="shouldBeEqualTo($END$);" description="shouldBeEqualTo statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbet" value="shouldNotBeEqualTo($END$);" description="shouldNotBeEqualTo statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="se" value="shouldEqual($END$);" description="shouldEqual statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sne" value="shouldNotEqual($END$);" description="shouldNotEqual statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sbl" value="shouldBeLike($END$);" description="shouldBeLike statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbl" value="shouldNotBeLike($END$);" description="shouldNotBeLike statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sri" value="$this-&gt;$FUNCTION$($ARGUMENTS$)-&gt;returnAnInstanceOf($END$);" description="shouldReturnAnInstanceOf example" toReformat="true" toShortenFQNames="true">
+    <variable name="FUNCTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGUMENTS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sbie" value="$this-&gt;$FUNCTION$($ARGUMENTS$)-&gt;shouldBeAnInstanceOf($CLASSORINTERFACE$);" description="shouldBeAnInstanceOf statement" toReformat="false" toShortenFQNames="true">
+    <variable name="ARGUMENTS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUNCTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASSORINTERFACE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sht" value="shouldHaveType($END$);" description="shouldHaveType statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="si" value="shouldImplement($END$);" description="shouldImplement statement" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

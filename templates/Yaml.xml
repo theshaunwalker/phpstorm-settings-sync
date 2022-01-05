@@ -1,0 +1,26 @@
+<templateSet group="Yaml">
+  <template name="dockercompose" value="version: '2'&#10;services:&#10;  app:&#10;    $BuildType$: $BuildSource$&#10;    volumes:&#10;      - $Volume$&#10;    ports:&#10;      - $Port$&#10;$END$" description="Docker Compose boilerplate" toReformat="false" toShortenFQNames="true">
+    <variable name="BuildType" expression="" defaultValue="&quot;image&quot;" alwaysStopAt="true" />
+    <variable name="BuildSource" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Volume" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Port" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="Twig" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="Vue" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+</templateSet>
