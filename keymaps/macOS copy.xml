@@ -1,8 +1,9 @@
 <keymap version="1" name="macOS copy" parent="Mac OS X 10.5+">
   <action id="$LRU">
-    <keyboard-shortcut first-keystroke="shift meta p" />
+    <keyboard-shortcut first-keystroke="shift meta o" />
   </action>
   <action id="Editor LRU">
-    <keyboard-shortcut first-keystroke="shift meta p" />
+    <keyboard-shortcut first-keystroke="shift meta o" />
   </action>
+  <action id="GotoFile" />
 </keymap>
