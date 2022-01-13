@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="18">
     <extensionMap>
       <mapping pattern="php-test" type="AUTO_DETECTED" />
+      <mapping pattern="dockernginx" type="AUTO_DETECTED" />
     </extensionMap>
   </component>
 </application>
