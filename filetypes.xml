@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="18">
     <extensionMap>
+      <mapping pattern="_helpers" type="AUTO_DETECTED" />
       <mapping pattern="php-test" type="AUTO_DETECTED" />
       <mapping pattern="dockernginx" type="AUTO_DETECTED" />
       <mapping ext="symlink" type="PLAIN_TEXT" />
