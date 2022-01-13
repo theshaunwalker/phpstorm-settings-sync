@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="php-test" type="AUTO_DETECTED" />
       <mapping pattern="dockernginx" type="AUTO_DETECTED" />
+      <mapping ext="symlink" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
