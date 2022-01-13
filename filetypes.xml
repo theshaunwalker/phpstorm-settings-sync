@@ -4,6 +4,7 @@
       <mapping pattern="_helpers" type="AUTO_DETECTED" />
       <mapping pattern="php-test" type="AUTO_DETECTED" />
       <mapping pattern="dockernginx" type="AUTO_DETECTED" />
+      <mapping pattern="dottest" type="AUTO_DETECTED" />
       <mapping ext="symlink" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
