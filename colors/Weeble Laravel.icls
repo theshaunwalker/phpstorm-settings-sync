@@ -27087,7 +27087,8 @@
     </option>
     <option name="WARNING_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="4b4409" />
+        <option name="BACKGROUND" value="523e03" />
+        <option name="EFFECT_COLOR" value="d9af06" />
         <option name="ERROR_STRIPE_COLOR" value="8c8c00" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
