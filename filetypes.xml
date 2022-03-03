@@ -10,6 +10,7 @@
       <mapping pattern="build" type="AUTO_DETECTED" />
       <mapping pattern="buildother" type="AUTO_DETECTED" />
       <mapping ext="symlink" type="PLAIN_TEXT" />
+      <removed_mapping ext="tf" approved="true" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
