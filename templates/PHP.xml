@@ -170,4 +170,11 @@
       <option name="PHP Comment" value="true" />
     </context>
   </template>
+  <template name="anonclass" value="new class($ARGS$) $INTERFACE${&#10;    public function __construct()&#10;    {&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INTERFACE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
