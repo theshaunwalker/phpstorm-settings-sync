@@ -177,7 +177,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="ann" value="#[$ANNOTATION$]" toReformat="false" toShortenFQNames="true">
+  <template name="ann" value="#[$ANNOTATION$]" description="" toReformat="false" toShortenFQNames="true">
     <variable name="ANNOTATION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
