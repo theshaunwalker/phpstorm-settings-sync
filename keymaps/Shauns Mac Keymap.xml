@@ -299,7 +299,6 @@
   <action id="EditorLineEnd">
     <keyboard-shortcut first-keystroke="END"  />
     <keyboard-shortcut first-keystroke="meta RIGHT"  />
-    <keyboard-shortcut first-keystroke="ctrl E"  />
   </action>
   <action id="ToggleFullScreen">
     <keyboard-shortcut first-keystroke="ctrl meta F"  />
@@ -533,7 +532,6 @@
   <action id="EditorLineStart">
     <keyboard-shortcut first-keystroke="HOME"  />
     <keyboard-shortcut first-keystroke="meta LEFT"  />
-    <keyboard-shortcut first-keystroke="ctrl A"  />
   </action>
   <action id="ActivateCommitToolWindow">
     <keyboard-shortcut first-keystroke="meta 0"  />
